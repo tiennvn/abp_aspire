@@ -18,6 +18,7 @@
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.1" />
     <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.0.1" />
+	  <PackageReference Include="Aspire.Hosting.Seq" Version="8.0.2" />
   </ItemGroup>
 
 </Project>

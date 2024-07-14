@@ -20,39 +20,9 @@ services:
     networks:
       - abp-network
 
-  kafka:
-    container_name: kafka
-    image: obsidiandynamics/kafka
-    restart: "no"
-    ports:
-      - "2181:2181"
-      - "9092:9092"
-    environment:
-      KAFKA_LISTENERS: "INTERNAL://:29092,EXTERNAL://:9092"
-      KAFKA_ADVERTISED_LISTENERS: "INTERNAL://kafka:29092,EXTERNAL://localhost:9092"
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT"
-      KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
-      KAFKA_ZOOKEEPER_SESSION_TIMEOUT: "6000"
-      KAFKA_RESTART_ATTEMPTS: "10"
-      KAFKA_RESTART_DELAY: "5"
-      ZOOKEEPER_AUTOPURGE_PURGE_INTERVAL: "0"
-    networks:
-      - abp-network
-
-  kafka-ui:
-    image: provectuslabs/kafka-ui
-    container_name: kafka-ui
-    ports:
-      - "8888:8080"
-    environment:
-      - KAFKA_CLUSTERS_0_NAME=kafka
-      - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:29092
-    networks:
-      - abp-network
-
   seq:
     container_name: seq
-    image: datalust/seq:2022.1
+    image: datalust/seq:2024.2
     ports:
       - 8889:80
       - 5341:5341

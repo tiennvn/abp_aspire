@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29020.237
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.BookStore.Domain", "src\Acme.BookStore.Domain\Acme.BookStore.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
@@ -36,6 +36,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.BookStore.HttpApi.Client.ConsoleTestApp", "test\Acme.BookStore.HttpApi.Client.ConsoleTestApp\Acme.BookStore.HttpApi.Client.ConsoleTestApp.csproj", "{EF480016-9127-4916-8735-D2466BDBC582}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme.BookStore.DbMigrator", "src\Acme.BookStore.DbMigrator\Acme.BookStore.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{34C6725E-FD22-42E7-AC47-210E05FF6E50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp.AppHost", "aspire\AspireApp\AspireApp.AppHost\AspireApp.AppHost.csproj", "{B625CCFF-1820-4E33-9431-15BD3F96BD2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireApp.ServiceDefaults", "aspire\AspireApp\AspireApp.ServiceDefaults\AspireApp.ServiceDefaults.csproj", "{A08EB2A5-154E-4101-93D3-29B7216ECCC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +109,14 @@ Global
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B625CCFF-1820-4E33-9431-15BD3F96BD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B625CCFF-1820-4E33-9431-15BD3F96BD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B625CCFF-1820-4E33-9431-15BD3F96BD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B625CCFF-1820-4E33-9431-15BD3F96BD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08EB2A5-154E-4101-93D3-29B7216ECCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08EB2A5-154E-4101-93D3-29B7216ECCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08EB2A5-154E-4101-93D3-29B7216ECCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08EB2A5-154E-4101-93D3-29B7216ECCC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,6 +137,8 @@ Global
 		{E512F4D9-9375-480F-A2F6-A46509F9D824} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{EF480016-9127-4916-8735-D2466BDBC582} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{B625CCFF-1820-4E33-9431-15BD3F96BD2F} = {34C6725E-FD22-42E7-AC47-210E05FF6E50}
+		{A08EB2A5-154E-4101-93D3-29B7216ECCC3} = {34C6725E-FD22-42E7-AC47-210E05FF6E50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspireApp.ApiService\AspireApp.ApiService.csproj" />
-    <ProjectReference Include="..\AspireApp.Web\AspireApp.Web.csproj" />
+    <ProjectReference Include="..\..\..\src\Acme.BookStore.AuthServer\Acme.BookStore.AuthServer.csproj" />
+    <ProjectReference Include="..\..\..\src\Acme.BookStore.HttpApi.Host\Acme.BookStore.HttpApi.Host.csproj" />
   </ItemGroup>
 
   <ItemGroup>
